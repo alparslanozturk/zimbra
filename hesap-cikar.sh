@@ -13,7 +13,7 @@ for account in ${accounts}; do
   
   # import script olusturuluyor
   echo "echo 'Aktarilan Hesap: ${account}'" >> ${aktar_script} 
-  echo "zmprov ca ${account} ${up} displayName '${dn}'" >> ${aktar_script}
+  echo "zmprov ca ${account} parola displayName '${dn}'" >> ${aktar_script}
   echo "zmprov ma ${account} userPassword '${up}'" >> ${aktar_script}
   echo '' >>  ${aktar_script}
   let sayac=sayac+1    

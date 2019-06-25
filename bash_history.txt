@@ -166,3 +166,124 @@
   166  cp /etc/selinux/config  /root/zimbra/etc_selinux_config.txt
   167  history  
   168  history   > /root/zimbra/bash_history.txt
+  169  cd /root/zimbra/
+  170  ls
+  171  git add .
+  172  git status
+  173  git push origin/master
+  174  git push origin master
+  175  git config 
+  176  git config  --get-all
+  177  git config  --get
+  178  git config  --global 
+  179  git config  --global -l
+  180  git config  --system -l
+  181  git config  --local -l
+  182  git help credentials
+  183  git config  -l
+  184  git config credential.helper store
+  185  git push -l
+  186  git push -v --all
+  187  git status
+  188  git add .
+  189  git commit -m "diğer ayalar..."
+  190  git push origin master
+  191  vim README.md 
+  192  git add .
+  193  git status
+  194  git push origin master
+  195  clear
+  196  iptables -L
+  197  dmesg
+  198  wget
+  199  wget https://files.zimbra.com/downloads/8.8.12_GA/zcs-8.8.12_GA_3794.RHEL7_64.20190329045002.tgz
+  200  mv zcs-8.8.12_GA_3794.RHEL7_64.20190329045002.tgz  ../
+  201  ls
+  202  exit
+  203  hostnamectl 
+  204  ping mail
+  205  clear
+  206  vim /etc/resolv.conf 
+  207  cat /etc/resolv.conf 
+  208  yum install vim wget links 
+  209  ip a
+  210  dmesg
+  211  yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  212  yum install htop
+  213  clear
+  214  htop
+  215  vim /etc/named.conf 
+  216  systemctl  status cockpit
+  217  systemctl  status cockpit.socket 
+  218  ss -anlt
+  219  yum install sosreport
+  220  yum list sos*
+  221  sosreport
+  222  yum provides sosreport
+  223  yum install sos
+  224  htop
+  225  clear
+  226  dmesg
+  227  yum clean all 
+  228  yum update -y 
+  229  yum clean all  && yum update -y
+  230  yum install libreoffice-headless libreoffice libreoffice-langpack-tr.x86_64  libreoffice-langpack-*  firefox 
+  231  yum -y install libidn wget nano make nc sudo sysstat libtool-ltdl glibc perl ntp perl-core libaio net-tools unzip chrony
+  232  vim /etc/sysconfig/chronyd 
+  233  scp  /etc/sysconfig/chronyd  /root/zimbra/etc_sysconfig_chronyd.txt
+  234  cp  /etc/sysconfig/chronyd  /root/zimbra/etc_sysconfig_chronyd.txt
+  235  clear
+  236  yum install httpd 
+  237  systemctl  disable httpd
+  238  clear
+  239  systemctl  daemon-reload  
+  240  yum list chron*
+  241  timedatectl status
+  242  vim /etc/chrony.conf 
+  243  history 
+  244  clear
+  245  exit
+  246  reboto
+  247  reboot
+  248  ls
+  249  ip a
+  250  iptables -L
+  251  ping 1.1.1.7
+  252  ping 1.1.1.2
+  253  vim /etc/ssh/sshd_config 
+  254  systemctl  restart sshd
+  255  exit
+  256  dmesg
+  257  ip a
+  258  vim /etc/sysconfig/grub 
+  259  uname -a
+  260  vim /etc/grub2.cfg 
+  261  yum update kernel
+  262  grub2-mkconfig  -o /boot/grub2/grub.cfg 
+  263  grub2-install  /dev/sda
+  264  reboot
+  265  clear
+  266  dmesg
+  267  yum update -y
+  268  history 
+  269  ls
+  270  tar zxvf zcs-8.8.12_GA_3794.RHEL7_64.20190329045002.tgz 
+  271  cd zcs-8.8.12_GA_3794.RHEL7_64.20190329045002/
+  272  ls
+  273  clear
+  274  ls
+  275  ip a
+  276  vim /etc/networks 
+  277  vim /etc/hosts
+  278  clear
+  279  hostnamectl status
+  280  cd zcs-8.8.12_GA_3794.RHEL7_64.20190329045002/
+  281  ls
+  282  ./install.sh 
+  283  ss -anlt
+  284  cd ..
+  285  ls
+  286  vim parola.txt
+  287  ls
+  288  history 
+  289  history   > /root/zimbra/bash_history.txt

@@ -21,3 +21,10 @@ named.mhrs
 named.mhrs-rev
 
 
+3. git ayarları: 
+
+git config credential.helper store
+
+
+
+

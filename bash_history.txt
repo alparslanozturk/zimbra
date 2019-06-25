@@ -1,0 +1,168 @@
+    1  nmcli con show
+    2  exit
+    3  clear
+    4  yum list bash*
+    5  yum install bash-completion
+    6  yum update -y
+    7  ls
+    8  hostnamectl status
+    9  reboot
+   10  yum install bash-complation
+   11  iptables -L
+   12  systemctl  disable firewalld.service 
+   13  systemctl  mask firewalld.service 
+   14  systemctl  disable postfix
+   15  systemctl  mask postfix
+   16  vim /etc/selinux/config 
+   17  vi /etc/selinux/config 
+   18  vim /etc/sysconfig/grub 
+   19  vi /etc/sysconfig/grub 
+   20  vim /etc/default/grub 
+   21  vi /etc/default/grub 
+   22  vim /etc/networks 
+   23  vi  /etc/networks 
+   24  cat /etc/issue
+   25  cat /etc/redhat-release 
+   26  ip a
+   27  ip a
+   28  clear
+   29  ip a
+   30  systemctl  -a --type=service
+   31  systemctl  -a --type=service |grep running
+   32  hostnamectl set-hostname mail.mhrs.gov.tr
+   33  yum install bind
+   34  yum list cokpit
+   35  yum list cokpit*
+   36  yum list cok*
+   37  yum list cockpit
+   38  yum install cockpit
+   39  systemctl  status cockpit
+   40  systemctl  enable --now cockpit.socket 
+   41  systemctl  status cockpit
+   42  systemctl  status cockpit.socket 
+   43  reboot
+   44  uptime
+   45  top -c
+   46  nmcli connection show  ens32 
+   47  nmcli connection modify ens32 ipv4.method manual 
+   48  nmcli connection modify ens32 ipv4.method=manual 
+   49  nmcli connection modify ens32 ipv4.method manual
+   50  ip a
+   51  nmcli connection modify ens32 ipv4.addresses 1.1.1.7/24
+   52  nmcli connection modify ens32 ipv4.method manual 
+   53  nmcli connection modify ens32 ipv4.dns "127.0.0.1 8.8.8.8"
+   54  nmcli connection show  ens32 
+   55  nmcli connection modify ens32 ipv4.gateway 1.1.1.2
+   56  nmcli connection modify ens32 ipv4.dns "127.0.0.1 1.1.1.2 8.8.8.8"
+   57  nmcli connection up ens32 
+   58  vim /etc/ssh/sshd_config 
+   59  vim /etc/ssh/ssh_config 
+   60  exit
+   61  clear
+   62  yum list "*X11*"
+   63  yum grouplist
+   64  yum install xorg-x11-apps
+   65  cd /var/named/
+   66  ls
+   67  cat named.empty 
+   68  cat named.localhost 
+   69  cp named.empty  named.mhrs
+   70  vim named.mhrs 
+   71  ls -alh 
+   72  chown root:named named.mhrs 
+   73  cat named.loopback 
+   74  cp named.loopback  named.mhrs-rev
+   75  ll
+   76  chown root:named named.mhrs-rev 
+   77  vim named.mhrs-rev 
+   78  vim /etc/named.conf 
+   79  ls
+   80  ls -alh 
+   81  vim /etc/named.conf 
+   82  systemctl  restart named
+   83  systemctl  status named
+   84  host 1.1.17
+   85  host 1.1.1.7
+   86  dmesg
+   87  host 1.1.1.7
+   88  yum provides host
+   89  yum install bind-utils
+   90  host 1.1.1.7
+   91  host mail.mhrs.gov.tr
+   92  clear
+   93  dmesg
+   94  ls -alh 
+   95  svn 
+   96  git
+   97  yum install git
+   98  yum list git*
+   99  cd /root/
+  100  clear
+  101  mkdir zimbra
+  102  echo "#zimbra" > README.md
+  103  git init
+  104  git add README.md 
+  105  git commit -m "ilk committir."
+  106  git remote add origin https://github.com/alparslanozturk/zimbra.git
+  107  git push -u origin  master
+  108  git status
+  109  pwd
+  110  cd zimbra/
+  111  ls
+  112  git statsu
+  113  cd ..
+  114  ls
+  115  ls -alh 
+  116  rm .git/ 
+  117  rm -rf .git/
+  118  mv README.md zimbra/
+  119  cd zimbra/
+  120  ls
+  121  git init
+  122  git add README.md 
+  123  git commit -m "ilk commit"
+  124  git status
+  125  ls
+  126  git remote add origin https://github.com/alparslanozturk/zimbra.git
+  127  git push -u origin master
+  128  clear
+  129  pwd
+  130  git status
+  131  git log
+  132  git remote list
+  133  git remote -l
+  134  git status 
+  135  git remote --l
+  136  git remote --list
+  137  git --help
+  138  giti push --help
+  139  git push --help
+  140  git push -u origin master --force
+  141  ls
+  142  ls -alh 
+  143  git status
+  144  cp /etc/named.conf  .
+  145  cp /var/named/named.mhrs* .
+  146  ls
+  147  history  |grep nmcli
+  148  vim README.md 
+  149  git commit -u "diğer ayalrr"
+  150  git  commit -u "diger ayalrar"
+  151  git add .
+  152  git commit -u  "bind ayaları burada" 
+  153  git status
+  154  history  |grep commit
+  155  git commit  -m "diğer ayarlar.. BIND"
+  156  git push origin 
+  157  git status
+  158  git push origin 
+  159  clear
+  160  ls
+  161  cd ..
+  162  ls
+  163  rm 1
+  164  ls
+  165  cp /etc/default/grub  /root/zimbra/etc_default_grub.txt
+  166  cp /etc/selinux/config  /root/zimbra/etc_selinux_config.txt
+  167  history  
+  168  history   > /root/zimbra/bash_history.txt
